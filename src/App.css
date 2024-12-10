@@ -7,6 +7,54 @@ body{
   z-index: 100;
 }
 
+.container{
+  width: auto;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.primary-text{
+  color: yellow;
+}
+
+.text-white{
+  color: white;
+}
+
+button{
+  padding:10px 20px;
+  border-radius: 20px;
+  background-color: yellow;
+}
+
+button:hover{
+  background-color: gray;
+  color: white;
+}
+
+/* banner start */
+
+.banner-image{
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 20px;
+}
+
+.banner-header{
+  position: relative;
+}
+
+/* banner end */
+
+
+
+
+
+
 /* nav-menu start*/
 nav .nav-menu{
   display: flex;
@@ -107,6 +155,25 @@ nav .mobile-link.visible ul a {
   color: white;
 }
 
+/* header start */
+
+header{
+  height: fit-content;
+  background-color:darkcyan;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+header .container h1,
+header .container h2,
+header .container p{
+  max-width: 500px;
+}
+
+
+
+/* header end */
+
 
 @media screen and (min-width:768px) {
   nav .mobile-menu{
@@ -114,6 +181,10 @@ nav .mobile-link.visible ul a {
   }
 
   nav .nav-menu{
+    width: 700px;
+  }
+
+  .container{
     width: 700px;
   }
 
@@ -130,4 +201,9 @@ nav .mobile-link.visible ul a {
   nav .nav-menu{
     width: 1280px;
   }
+
+  .container{
+    width: 1280px;
+  }
 }
+
