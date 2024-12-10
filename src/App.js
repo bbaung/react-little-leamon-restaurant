@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import Nav from './components/Nav';
 import Header from './components/Header';
-import BookingForm from './components/BookingForm';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         button_text = "Reserve Table"
       />
 
-      <BookingForm/>
+      <Footer/>
     </>
   );
 }
