@@ -36,12 +36,15 @@ button:hover{
 /* banner start */
 
 .banner-image{
-  height: 400px;
-  width: 400px;
-  position: absolute;
+  height: 250px;
+  width: 250px;
+  position: relative;
+  display: block;
   top: 0;
   right: 0;
   border-radius: 20px;
+  margin: auto;
+  margin-top: 20px;
 }
 
 .banner-header{
@@ -195,6 +198,22 @@ header .container p{
   nav .mobile-link.visible{
     display: none;
   }
+
+  .banner-image{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0px;
+  }
+
+  header .container h1,
+  header .container h2,
+  header .container p{
+  max-width: 300px;
+}
+
 }
 
 @media screen and (min-width:1440px) {
@@ -205,5 +224,12 @@ header .container p{
   .container{
     width: 1280px;
   }
+
+  header .container h1,
+  header .container h2,
+  header .container p{
+  max-width: 500px;
+}
+
 }
 
