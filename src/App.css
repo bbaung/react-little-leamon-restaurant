@@ -26,6 +26,7 @@ button{
   padding:10px 20px;
   border-radius: 20px;
   background-color: yellow;
+  max-height: 35px;
 }
 
 button:hover{
@@ -207,6 +208,52 @@ footer h3{
 
 /* footer end */
 
+/* recipes-menu start */
+.recipes-menu{
+  padding-top: 150px;
+  padding-bottom: 30px;
+}
+
+.recipes-menu .title{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recipes-menu .card{
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.recipes-menu .card .card-content{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: darkcyan;
+  border-radius: 10px;
+  height: 600px;
+}
+
+.recipes-menu .card .card-content .card-image{
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.recipes-menu .card .card-content .card-text{
+  max-width: 200px;
+  margin: auto;
+  margin-top: 0px;
+}
+
+
+
+/* recipes-menu end */
+
 
 @media screen and (min-width:768px) {
   nav .mobile-menu{
@@ -242,6 +289,23 @@ footer h3{
   header .container h2,
   header .container p{
   max-width: 300px;
+}
+
+
+
+.recipes-menu .card .card-content .card-image{
+  width: 400px;
+  height: 300px;
+}
+
+.recipes-menu .card .card-content .card-text{
+  max-width: 350px;
+}
+
+.recipes-menu .card .card-content .card-text .price{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 }
