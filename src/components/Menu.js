@@ -1,6 +1,5 @@
 import React from "react";
 import Recipes from "../components/Recipes";
-import greekSalad from "../assets/greek_salad.jpg"
 import Swal from 'sweetalert2';
 
 
@@ -45,7 +44,7 @@ const RecipesMenu = () =>{
 
                         <div className="card-content">
 
-                            <img className="card-image" src={greekSalad}/>
+                            <img className="card-image" src={e.image} alt="e.title"/>
 
                             <div className="card-text" key={e.id}>
                                 
